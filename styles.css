@@ -44,3 +44,7 @@ footer {
 .separator {
 	font-size: 15px;
 }
+
+.accessiblity-button {
+	display: none;
+}
