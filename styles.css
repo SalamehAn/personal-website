@@ -16,7 +16,7 @@ aside {
   display: none;
 }
 
-@media (width >= 982px) {
+@media (width >= 982px) and (height >= 739px) {
   aside {
     display: flex;
     flex-direction: column;
@@ -26,6 +26,7 @@ aside {
     position: fixed;
     align-items: center;
     justify-content: center;
+    gap: 1000px;
   }
 
   nav.sidebar::after {
@@ -35,7 +36,7 @@ aside {
     height: 5px;
     width: 80%;
     content: "";
-    margin: 0.2em auto 1em;
+    margin: 0.2em auto 6em;
   }
 
   nav.sidebar {
@@ -238,7 +239,7 @@ footer#mobile-footer {
   display: none;
 }
 
-@media (width <= 982px) {
+@media (width <= 982px) or (height < 739px) {
   footer#mobile-footer {
     display: flow-root;
     padding: 25px 0px 0px;
