@@ -98,7 +98,8 @@ aside {
   aside footer > div.socials > * {
     border: 3px solid black;
     font-family: serif, sans-serif;
-    transition-duration: 0.4s
+    transition-duration: 0.4s;
+    box-shadow: gray -5px 5px; 
   }
 
   aside footer > div.socials > *:hover {
