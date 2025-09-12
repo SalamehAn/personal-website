@@ -1,12 +1,25 @@
+@keyframes appear{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 html, body {
 	font-family: sans-serif;
 	background: #f4f0ec;
   margin: 0px;
   padding: 0px;
+  font-size: clamp(14px, 1.2vw + 0.5rem, 18px);
 }
 
 hr {
   margin-top: 0px;
+  animation-duration: 60s;
+  animation-name: appear;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,7 +28,77 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 0px;
 }
 
-header h1 {
+aside {
+  display: none;
+}
+
+@media (width >= 768px) {
+  aside {
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc5d0;
+    width: 30%;
+    height: 100vh;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav.sidebar::after {
+    color: black;
+    display: block;
+    background-color: black;
+    height: 5px;
+    width: 80%;
+    content: "";
+    margin: 0.2em auto 1em;
+  }
+
+  nav.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav a, nav a:hover, nav a:visited, nav a:active, nav a:focus {
+    font-family: serif, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #333333;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: gray;
+  }
+
+  aside footer {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 10%;
+    text-align: center;
+  }
+
+  aside footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-family: serif, sans-serif;
+  }
+
+  body > header {
+    margin-left: 30%;
+    width: calc(100% - 30%);
+  }
+  main {
+    margin-left: 30%;
+    width: calc(100% - 30%);
+  }
+}
+
+header.hero h1 {
   color: #8b8680;
 }
 
@@ -25,14 +108,78 @@ header.hero {
 
 section {
   color: #5f5f5f;
+  text-align: center;
+  margin-bottom: 5em;
 }
 
-section h2 {
+section header{
+  font-family: serif, sans-serif;
+  position: relative;
+  color: #333333;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+section header::after {
+  color: black;
+  display: block;
+  background-color: black;
+  height: 10px;
+  width: 120px;
+  content: "";
+  margin: 0.2em auto 1em;
+}
+
+section h5 {
   color: #333333;
 }
 
-footer {
-  background: #fdfaf6;
-  display: flow-root;
+button#download {
+  padding: 5px;
+  border-radius: 10px;
+  color: #ccc5d0;
+}
+
+div.card-personal {
+  text-align: left;
+  box-sizing: border-box;
+  background-color: #ccc5d0;
+  border-radius: 10px;
+  box-shadow: gray 5px 5px 5px;
+  padding: 10px 10px 10px;
+  margin: 0px 0px 1rem;
+  transition-duration: 0.2s;
+}
+
+div.card-personal:hover {
+  transform: translateY(-5px);
+}
+
+footer#mobile-footer {
+  display: none;
   padding: 50px 0px 0px;
+}
+
+@media (width <= 768px) {
+  footer#mobile-footer {
+    display: flow-root;
+    padding: 50px 0px 0px;
+    background-color: #fdfaf6;
+    text-align: center;
+    font-family: serif, sans-serif;
+  }
+  
+  footer#mobile-footer a, footer#mobile-footer a:visited {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-family: serif, sans-serif;
+  }
+  
+  footer#mobile-footer a:hover, footer#mobile-footer a:active  {
+    text-decoration: none;
+    color: #ccc5d0;
+    font-size: 1.2em;
+    font-family: serif, sans-serif;
+  }
 }

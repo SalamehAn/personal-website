@@ -9,86 +9,106 @@
 		<link rel="icon" href="images/icon/favicon.ico">
 	</head>
 	<body>
-    <header class="p-5 hero">
-      <div style="display: flex; gap: 10px;">
-      <img src="images/personal_image.jpg" alt="personal image" style="border: 2px solid #c8c2bb; width: auto; height: 7em; ">
+    <aside>
+      <nav class="sidebar"> 
+        <a href="#current-goal">Current Goal</a>
+        <br>
+        <a href="#experience">Experience</a>
+        <br>
+        <a href="#education">Education</a>
+        <br>
+        <a href="#skills">Skills</a>
+        <br>
+        <a href="#languages">Languages</a>
+        <br>
+      </nav>
+      <footer>
+        <p>
+          <a href="https://github.com/SalamehAn" target="_blank">Github</a>
+          <a href="https://www.linkedin.com/in/farressalameh/" target="_blank">LinkedIn</a>
+        </p>
+        <p>&copy; 2025 Salamehan. All Rights Reserved</p>
+      </footer>
+    </aside>
+    <header class="text-center p-5 hero">
+      <img src="images/personal_image.jpg" alt="personal image" style="max-width: 100%; height: auto; border: 7px solid #c8c2bb; box-sizing: border-box; padding: 15px; object-fit: contain;">
       <div style="display: flex; flex-direction: column;">
-      <h1>Farres Khalid Salameh</h1>
-      <a style="flex: 0 0 1;" href="downloadable/resume.pdf" download="resume.pdf" target="_blank"><button>Download CV</button></a>
-      </div>
+        <h1 style="font-weight: bold; font-size: 4em;">Farres Khalid Salameh</h1>
+        <h2 style="font-weight: bold; color: #5f5f5f;"> Computer Science Undergraduate</h2>
+        <a style="flex: 0 0 1;" href="downloadable/resume.pdf" download="resume.pdf" target="_blank">
+          <button id="download">Download CV</button>
+        </a>
       </div>
     </header>
     <div class="container">
       <main>
-
         <br>
-        <section>
-          <h2>Objective</h2>
-          <hr>
-          To contribute to solutions that solve real problems, and to do so responsibly.
+        <section id="current-goal">
+          <header>Current Goal</header>
+            To contribute to solutions that solve real problems, and to do so responsibly.
+        </section>
+          
+        <section id="experience">
+          <header>Experience</header>
+          <div class="card-personal"> 
+              <div style="float: right">Amman, Jordan</div>
+              <h5>ArtiKeys</h5>
+              Intern
+              <div style="float: right">July, 2025 - Present</div>
+          </div>
         </section>
 
-        <br>
-
-        <section>
-          <h2>Experience</h2>
-          <hr>
-          <h5 style="display: inline">ArtiKeys</h5>
-          <span style="float: right">Amman, Jordan</span>
-          <br>
-          Intern - July, 2025 - Present
+        <section id="education">
+          <header>Education</header>
+          <div class="card-personal"> 
+            <h5>Princess Sumaya University</h5>
+            <p style="margin-bottom: 0;">B.Sc., Computer Science, GPA: 85.9</p>
+            <p style="margin-top: 0;">Coursework Taken: Discrete Mathematics, Structured Programming, Object Oriented Programming, Data Structures, Algorithms Design &amp; Analysis, Database Systems, Operating Systems, Data Communications &amp; Computer Networks</p>
+          </div>
         </section>
 
-        <br>
-
-        <section>
-          <h2>Education</h2>
-          <hr>
-          Princess Sumaya University
-          <br>
-          B.Sc., Computer Science, GPA: 85.9
-          <br>
-          Coursework Taken: Discrete Mathematics, Structured Programming, Object Oriented Programming, Data Structures, Algorithms Design &amp; Analysis, Database Systems, Operating Systems, Data Communications &amp; Computer Networks
+        <section id="skills">
+          <header>Skills</header> 
+          <div class="card-personal"> 
+            <h5>Programming Languages</h5>
+            C++ (Familiar), Python (Familiar)
+          </div>
+          <div class="card-personal"> 
+            <h5>Database Technologies</h5>
+            Oracle SQL
+          </div>
+          <div class="card-personal"> 
+            <h5>Version Control Technologies</h5>
+            Git, GitHub
+          </div>
         </section>
 
-        <br>
-
-        <section>
-          <h2>Projects</h2>
-          <hr>
-        </section>
-
-        <br>
-
-        <section>
-          <h2>Skills</h2> 
-          <hr>
-          Programming Languages: C++ (Familiar), Python (Familiar)
-          <br>
-          Database Technologies: Oracle SQL
-          <br>
-          Version Control Technologies: Git, GitHub
-        </section>
-
-        <br>
-
-        <section style="margin-bottom: 50px;">
-          <h2>Languages</h2>
-          <hr>
-          Arabic * * * * *
-          <br>
-          English * * * * *
+        <section id="languages"> 
+          <header>Languages</header>
+          <div class="card-personal"> 
+          Arabic 
+          <img style="height:auto; width: 32px;" src="images/icon/levelmarker.ico">
+          <img style="height:auto; width: 32px;" src="images/icon/levelmarker.ico">
+          <img style="height:auto; width: 32px;" src="images/icon/levelmarker.ico">
+          <img style="height:auto; width: 32px;" src="images/icon/levelmarker.ico">
+          <img style="height:auto; width: 32px;" src="images/icon/levelmarker.ico">
+          <br><br>
+          English
+          <img style="height:auto; width: 32px;" src="images/icon/levelmarker.ico">
+          <img style="height:auto; width: 32px;" src="images/icon/levelmarker.ico">
+          <img style="height:auto; width: 32px;" src="images/icon/levelmarker.ico">
+          <img style="height:auto; width: 32px;" src="images/icon/levelmarker.ico">
+          <img style="height:auto; width: 32px;" src="images/icon/uncheckedlevelmarker.ico">
+          </div>
         </section>
       </main>
     </div>
-    <div style="background-color: #fdfaf6">
-    <footer class="container">
+    <footer id="mobile-footer">
       <p>
         <a href="https://github.com/SalamehAn" target="_blank">Github</a>
-        <span class="separator">|</span> <a href="https://www.linkedin.com/in/farressalameh/" target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/farressalameh/" target="_blank">LinkedIn</a>
       </p>
       <p>&copy; 2025 Salamehan. All Rights Reserved</p>
     </footer>
-    </div>
 	</body>
 </html>
