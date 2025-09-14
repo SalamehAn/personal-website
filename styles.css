@@ -249,7 +249,13 @@ div.card-personal {
 div.score {
   cursor: default;
   display: inline-block;
-  margin: 8px 0px;
+}
+
+div.language-score {
+  display: grid;
+  grid-template-columns: 80px auto;
+  align-items: center;
+  margin: 0 0 0.1em;
 }
 
 div.card-personal:hover {
